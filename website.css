@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+.navigasi {
+    background-color: white;
+    border: 2px #F98903;
+    width: 100%;
+    height: 70px;
+    color: #0B60B0;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 2px 3px 0 #f0f0f0;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding: 15px 30px;
+}
+
+.logo img {
+    width: 100px; /* Sesuaikan dengan ukuran logo Anda */
+}
+
+.menu {
+    margin-left: auto;
+    padding-right: 30px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+    flex-direction: column;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #0B60B0;
+}
+
+.menu a:hover {
+    color: #F98903;
+    font-style: italic;
+}
+
+.lebar {
+    background-image: url(gambar/f.gif);
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    color: white;
+}
+
+.lebar h1 {
+    margin-top: 200px;
+    margin-bottom: 10px;
+    color: #0B60B0;
+}
+
+.lebar button {
+    margin-top: 60px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #F98903;
+    color: white;
+    cursor: pointer;
+}
+
+.lebar button:hover {
+    background-color: #0B60B0;
+}
+
+.dino {
+    display: none; /* Menghilangkan elemen .dino karena tidak digunakan */
+}
+
+h1 span:before {
+    content: '';
+    animation: gerak infinite 9s ease;
+    transform: translateY(-50%);
+    color: #F98903;
+    font-size: 50px;
+}
+
+@keyframes gerak {
+    0% {
+        content: 'Selamat Datang';
+    }
+    50% {
+        content: 'Di Website 013';
+    }
+    100% {
+        content: 'Terimakasih';
+    }
+}
+
+.box-biodata {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 90px;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16, .box17, .box18 {
+    width: 300px;
+    height: 320px;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.box1 img, .box2 img, .box3 img, .box4 img, .box5 img, .box6 img, .box7 img, .box8 img, .box9 img, .box10 img, .box11 img, .box12 img, .box13 img, .box14 img, .box15 img, .box16 img, .box17 img, .box18 img {
+    width: 100%;
+    height: auto;
+}
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover, .box8:hover, .box9:hover, .box10:hover, .box11:hover, .box12:hover, .box13:hover, .box14:hover, .box15:hover, .box16:hover, .box17:hover, .box18:hover {
+    background-color: #0B60B0;
+    color: #F98903;
+}
+
+.ALBUM {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    width: 100%;
+    height: 40px;
+    background-color: #F98903;
+}
+
+.box-album, .box-album1, .box-album3, .box-album4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: -80px;
+    margin-bottom: 20px;
+}
+
+.box-album > div, .box-album1 > div, .box-album3 > div, .box-album4 > div {
+    flex: 0 0 33.33%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.foto1 img, .foto2 img, .foto3 img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.foto1:hover img, .foto2:hover img, .foto3:hover img {
+    transform: scale(1.1);
+}
+
+#kontak {
+    padding: 50px 0;
+}
+
+.card-kontak {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kiri {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.right {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.kiri-kontak {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-kontak {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-kontak h2 {
+    color: #333;
+}
+
+.form-kontak input[type="text"],
+.form-kontak input[type="email"],
+.form-kontak textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-kontak textarea {
+    height: 150px;
+}
+
+.form-kontak button {
+    background-color: #F98903;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-kontak button:hover {
+    background-color: #e77e03;
+}
+
+
+.kopi {
+    text-align: center;
+    background-color: #0B60B0;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        padding: 10px;
+    }
+
+    .menu {
+        padding-right: 10px;
+        flex-direction: column; /* Menyusun menu secara vertikal */
+        align-items: center; /* Pusatkan menu secara horizontal */
+        display: flex;
+    }
+
+    .menu ul li{
+        padding: 5px;
+        margin-bottom: 10px;
+        flex-direction: row;
+        margin-right: 20px;
+    }
+
+    .lebar h1 {
+        margin-top: 150px;
+    }
+
+    .lebar button {
+        margin-top: 40px;
+        width: 300px;
+    }
+
+    .box-biodata {
+        margin-top: 50px;
+    }
+
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16, .box17, .box18 {
+        width: calc(50% - 40px);
+        margin: 10px;
+    }
+
+    .card-kontak {
+        flex-direction: column;
+    }
+
+    .kiri, .right {
+        width: 100%;
+        padding: 0;
+    }
+}

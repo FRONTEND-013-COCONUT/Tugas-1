@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navigasi {
+    background-color: white;
+    border: 2px #F98903;
+    width: 100%;
+    height: 70px;
+    color: #0B60B0;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 2px 3px 0 #f0f0f0;
+    display: flex;
+    align-items: center;
+    z-index: 1000; /* Menambahkan z-index agar navbar tetap di atas konten */
+}
+
+.logo {
+    padding: 15px 30px;
+}
+
+span {
+    color: #F98903;
+}
+
+.menu {
+    margin-left: auto;
+    padding-right: 30px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex; /* Mengubah menjadi flex untuk penataan yang lebih baik */
+}
+
+.menu ul li {
+    margin-right: 20px;
+}
+
+.menu ul li:last-child {
+    margin-right: 0; /* Menghapus margin-right pada elemen terakhir */
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #0B60B0;
+}
+
+.menu ul li a:hover {
+    color: #F98903;
+    font-style: italic;
+}
+
+.lebar {
+    background-image: url(gambar/c.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding-top: 70px; /* Menambahkan padding-top agar konten tidak tertutup oleh navbar */
+    box-sizing: border-box; /* Menambahkan box-sizing untuk memperhitungkan padding dalam perhitungan lebar */
+}
+
+.lebar img {
+    border-radius: 50%;
+    height: auto;
+    width: 150px;
+    margin-top: 100px;
+    margin-right: 20px; /* Menambahkan margin-right agar ada ruang antara gambar dan teks */
+}
+
+.lebar h1 {
+    margin-top: 100px; /* Mengurangi margin-top untuk penataan yang lebih baik */
+    margin-bottom: 10px;
+    color: #0B60B0;
+    display: inline-block; /* Membuat judul menjadi inline-block agar foto dan judul bersampingan */
+}
+
+.lebar button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 50px;
+    border: none;
+}
+
+.lebar button:hover {
+    background-color: #F98903;
+    border: 1px solid white;
+    color: white;
+}
+
+h1 span:before {
+    content: '';
+    animation: gerak infinite 9s ease;
+    transform: translateY(-50%);
+    color: #F98903;
+    font-size: 50px;
+}
+
+@keyframes gerak {
+    0% {
+        content: 'Selamat Datang';
+    }
+    50% {
+        content: 'Di Website 013';
+    }
+    100% {
+        content: 'Terimakasih';
+    }
+}
+
+@-webkit-keyframes gerak {
+    0% {
+        content: 'Selamat Datang';
+    }
+    50% {
+        content: 'Di Website 013';
+    }
+    100% {
+        content: 'Terimakasih';
+    }
+}
+
+.biodata {
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: justify; /* Menambahkan penataan teks rata kiri-kanan */
+}
+
+.biodata ul {
+    list-style: none;
+    text-align: center; /* Menambahkan penataan teks di tengah */
+}
+
+.biodata ul li {
+    margin-bottom: 10px; 
+}
+
+.gambarbiodata img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+@media (max-width: 768px) {
+    .navigasi {
+        height: 50px; /* Mengurangi ketinggian navbar pada layar kecil */
+    }
+
+    .logo {
+        padding: 10px; /* Mengurangi padding pada logo pada layar kecil */
+    }
+
+    .menu {
+        display: none; /* Menyembunyikan menu pada layar kecil */
+    }
+
+    .lebar {
+        padding-top: 50px; /* Menambahkan padding-top pada konten utama pada layar kecil */
+    }
+
+    .lebar img {
+        display: block;
+        margin: 0 auto; /* Menengahkan gambar pada layar kecil */
+        margin-bottom: 20px; /* Menambahkan margin-bottom agar ada ruang antara gambar dan judul */
+    }
+
+    .lebar h1 {
+        margin-top: 0; /* Menghapus margin-top pada judul pada layar kecil */
+        margin-bottom: 20px; /* Menambahkan margin-bottom agar ada ruang antara gambar dan judul */
+    }
+}
